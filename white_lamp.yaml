@@ -1,0 +1,8 @@
+substitutions:
+  device: white_lamp
+  name: "White Lamp"
+  ip: 192.168.178.93
+  icon: "mdi:floor-lamp"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
