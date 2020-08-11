@@ -1,0 +1,21 @@
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    id: button
+    on_press:
+      then:
+        - light.toggle: ${device}
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: relay
+
+light:
+  - platform: binary
+    output: relay
+    name: ${name}
+    id: ${device}
