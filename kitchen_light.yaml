@@ -1,0 +1,8 @@
+substitutions:
+  device: kitchen_light
+  name: "Kitchen Light"
+  ip: 192.168.178.65
+  icon: "mdi:vanity-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
