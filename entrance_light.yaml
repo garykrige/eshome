@@ -1,0 +1,8 @@
+substitutions:
+  device: entrance_hall_light
+  name: "Entrance hall Light"
+  ip: 192.168.178.103
+  icon: "mdi:ceiling-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
