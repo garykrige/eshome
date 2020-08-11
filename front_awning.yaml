@@ -1,4 +1,4 @@
-<<: !include /etc/secrets.yaml
+<<: !include ../secrets.yaml
 
 esphome:
   name: front_awning
