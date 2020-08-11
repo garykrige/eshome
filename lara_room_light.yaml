@@ -1,0 +1,8 @@
+substitutions:
+  device: lara_room_light
+  name: "Lara's Light"
+  ip: 192.168.178.52
+  icon: "mdi:globe-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
