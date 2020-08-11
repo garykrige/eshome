@@ -1,0 +1,8 @@
+substitutions:
+  device: office_light
+  name: "Office Light"
+  ip: 192.168.178.54
+  icon: "mdi:globe-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
