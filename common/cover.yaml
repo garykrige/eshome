@@ -32,7 +32,7 @@ switch:
 cover:
 - platform: time_based
   name: ${name}
-  id: my_cover
+  id: ${device}
   open_action:
     - switch.turn_on: open_cover
   open_duration: ${open_duration}
