@@ -1,0 +1,8 @@
+substitutions:
+  device: industrial_lamp
+  name: "Industrial Lamp"
+  ip: 192.168.178.92
+  icon: "mdi:floor-lamp"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
