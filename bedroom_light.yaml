@@ -1,0 +1,8 @@
+substitutions:
+  device: bedroom_light
+  name: "G&K Bedroom Light"
+  ip: 192.168.178.50
+  icon: "mdi:globe-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
