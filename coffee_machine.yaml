@@ -1,0 +1,29 @@
+substitutions:
+  device: coffee_machine
+  name: "Coffee Machine"
+  ip: 192.168.178.104
+
+<<: !include common/common.yaml
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: GPIO0
+      mode: INPUT_PULLUP
+      inverted: True
+    id: button
+    on_press:
+      then:
+        - switch.toggle: ${device}
+
+output:
+  - platform: gpio
+    pin: GPIO12
+    id: relay
+
+switch:
+  - platform: gpio
+    pin: GPIO12
+    name: ${name}
+    id: ${device}
+    icon: "mdi:coffee-maker"
