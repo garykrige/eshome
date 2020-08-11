@@ -1,5 +1,3 @@
-<<: !include /config/secrets/secrets.yaml
-
 esphome:
   name: front_awning
   platform: ESP8266
