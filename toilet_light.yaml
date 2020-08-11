@@ -1,0 +1,8 @@
+substitutions:
+  device: toilet_light
+  name: "Toilet Light"
+  ip: 192.168.178.102
+  icon: "mdi:ceiling-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
