@@ -1,0 +1,8 @@
+substitutions:
+  device: kitchen_cupboard_light
+  name: "Kitchen Cupboard Light"
+  ip: 192.168.178.100
+  icon: "mdi:wall-sconce-flat"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
