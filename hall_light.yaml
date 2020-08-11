@@ -1,0 +1,8 @@
+substitutions:
+  device: hall_light
+  name: "Hall Light"
+  ip: 192.168.178.53
+  icon: "mdi:globe-light"
+
+<<: !include common/common.yaml
+<<: !include common/light.yaml
