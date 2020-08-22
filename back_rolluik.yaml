@@ -1,0 +1,9 @@
+substitutions:
+  device: back_rolluik
+  name: "Back Rolluik"
+  ip: 192.168.178.74
+  open_duration: 30s
+  close_duration: 35s
+
+<<: !include common/common.yaml
+<<: !include common/cover.yaml
