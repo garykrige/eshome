@@ -1,0 +1,9 @@
+substitutions:
+  device: front_rolluik
+  name: "Front Rolluik"
+  ip: 192.168.178.73
+  open_duration: 30s
+  close_duration: 35s
+
+<<: !include common/common.yaml
+<<: !include common/cover.yaml
